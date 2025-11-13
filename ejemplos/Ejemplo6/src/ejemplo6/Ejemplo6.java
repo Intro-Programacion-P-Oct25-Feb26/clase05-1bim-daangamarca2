@@ -46,7 +46,7 @@ public class Ejemplo6 {
             pagoTotal = pago - valorDescuento;
             System.out.printf("FACTURA DETALLADA\n\nNombre y Apellido: %s %s"
                     + "\nUsuario: %s\nEdad: %s\nParroquia: %s\nDia de Pago:"
-                    + " %s\nAdemas por cancelar antes del dia 10:\nSe le "
+                    + " %s\nPor cancelar antes del dia 10:\nSe le "
                     + "otorga un descuento del 5 porciento\nEs decir: %.2f\nSu "
                     + "total a pagar es:%.2f\n",nombre,apellido,usuario,edad,
                     parroquia,diaPago,valorDescuento,pagoTotal);            

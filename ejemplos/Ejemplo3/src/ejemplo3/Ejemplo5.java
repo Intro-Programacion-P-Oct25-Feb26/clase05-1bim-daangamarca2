@@ -36,17 +36,17 @@ public class Ejemplo5 {
             } else {
                 if ((promedio >= 3) && (promedio < 5)) {
                     System.out.printf("Estudiante entra a recuperacion con "
-                        + "promedio: %.2f\n", promedio);             
-                    } else {
-                        if (promedio < 3) {
-                            System.out.printf("Estudiantes reprobado con"
+                            + "promedio: %.2f\n", promedio);
+                } else {
+                    if (promedio < 3) {
+                        System.out.printf("Estudiantes reprobado con"
                                 + "promedio: %.2f", promedio);
-                              } else {                  
-                                    System.out.printf("Nota fuera de rango "
-                                            + "promedio: %.2f", promedio);
-                                }
+                    } else {
+                        System.out.printf("Nota fuera de rango "
+                                + "promedio: %.2f", promedio);
                     }
                 }
-             }
+            }
         }
-    }  
+    }
+}

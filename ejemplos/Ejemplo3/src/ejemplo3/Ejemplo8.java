@@ -26,34 +26,34 @@ public class Ejemplo8 {
         // < 3 Reprobado
         // notas no pueden ser mayor a 10
         // indicar si la nota esta fuera de rango
-        
+
         double promedio = 2.978;
         String mensaje = "";
 
         if ((promedio >= 5) && (promedio <= 10)) {
             //System.out.printf("Estudiante aprobado con un "
-                    //+ "promedio: %.2f\n", promedio);
+            //+ "promedio: %.2f\n", promedio);
             //mensaje = "Estudiante aprobado con un promedio:" + promedio;
             mensaje = String.format("Estudiante aprobado con un promedio: "
                     + "%.2f\n", promedio);
         } else {
             if ((promedio >= 5) && (promedio < 7.5)) {
-                System.out.printf("Estudiante en suspenso con un "
+                mensaje = String.format("Estudiante entra a recuperacion con un "
                         + "promedio: %.2f\n", promedio);
             } else {
                 if ((promedio >= 3) && (promedio < 5)) {
-                    System.out.printf("Estudiante entra a recuperacion con "
+                    System.out.printf("Estudiante en suspenso con "
                             + "promedio: %.2f\n", promedio);
                 } else {
                     if ((promedio <= 3) && (promedio > 0)) {
-                        System.out.printf("Estudiante reprobado con"
-                                + " promedio: %.2f", promedio);
+                        mensaje = String.format("Estudiante entra a recuperacion"
+                                + " con un promedio: %.2f\n", promedio);
                     } else {
-                        System.out.printf("Nota fuera de rango "
-                                + "promedio: %.2f", promedio);
+                        mensaje = String.format("Nota fuera de rango: %.2f\n",
+                                 promedio);
                         if (promedio < 0) {
-                            System.out.printf("La nota %.2f es "
-                                    + "negativa", promedio);
+                            mensaje = String.format("La nota %.2f es negativa",
+                                     promedio);
                         }
                     }
                 }
